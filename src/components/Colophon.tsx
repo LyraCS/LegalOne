@@ -40,9 +40,10 @@ export default function Colophon() {
             <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
               {[
                 ["Tentang", "#tentang"],
-                ["Layanan", "#layanan"],
-                ["Paket", "#paket"],
-                ["Proses", "#proses"],
+                ["Pendirian Legalitas", "#pendirian"],
+                ["Notaris & PPAT", "#notaris"],
+                ["Perizinan", "#perizinan"],
+                ["Layanan Hukum", "#hukum"],
                 ["Kontak", "#kontak"],
               ].map(([label, href], i) => (
                 <li key={href} className="flex items-center gap-5">

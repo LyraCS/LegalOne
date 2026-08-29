@@ -28,7 +28,7 @@ function Step({ index, title, desc }: { index: number; title: string; desc: stri
 export default function Process() {
   return (
     <section id="proses" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-16 md:px-10 md:py-24">
-      <SectionHeading num="04" label="CARA KERJA" title="Empat Langkah Sampai Usaha Berdiri." />
+      <SectionHeading num="06" label="CARA KERJA" title="Empat Langkah Sampai Usaha Berdiri." />
 
       {/* desktop: linimasa horizontal */}
       <ol className="relative mt-16 hidden gap-10 md:grid md:grid-cols-4 md:gap-8">

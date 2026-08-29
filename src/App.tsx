@@ -2,8 +2,10 @@ import Masthead from "./components/Masthead";
 import Hero from "./components/Hero";
 import IntroStats from "./components/IntroStats";
 import About from "./components/About";
-import Services from "./components/Services";
-import Pricing from "./components/Pricing";
+import Pendirian from "./components/Pendirian";
+import NotarisPPAT from "./components/NotarisPPAT";
+import Perizinan from "./components/Perizinan";
+import JasaHukum from "./components/JasaHukum";
 import Process from "./components/Process";
 import PullQuote from "./components/PullQuote";
 import Why from "./components/Why";
@@ -19,8 +21,10 @@ export default function LegalOnePage() {
         <Hero />
         <IntroStats />
         <About />
-        <Services />
-        <Pricing />
+        <Pendirian />
+        <NotarisPPAT />
+        <Perizinan />
+        <JasaHukum />
         <Process />
         <PullQuote />
         <Why />

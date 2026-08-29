@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 const NAV = [
-  { label: "Tentang", href: "#tentang" },
-  { label: "Layanan", href: "#layanan" },
-  { label: "Paket", href: "#paket" },
-  { label: "Proses", href: "#proses" },
+  { label: "Tentang Kami", href: "#tentang" },
+  { label: "Pendirian Legalitas", href: "#pendirian" },
+  { label: "Notaris & PPAT", href: "#notaris" },
+  { label: "Perizinan", href: "#perizinan" },
+  { label: "Layanan Hukum", href: "#hukum" },
   { label: "Kontak", href: "#kontak" },
 ];
 
@@ -37,15 +38,15 @@ export default function Masthead() {
         </a>
 
         <nav className={`hidden min-w-0 items-center lg:flex ${scrolled ? "" : "pointer-events-none invisible"}`} aria-label="Navigasi utama">
-          <ul className="flex min-w-0 items-center gap-4 lg:gap-6">
+          <ul className="flex min-w-0 items-center gap-2 xl:gap-4">
             {NAV.map((item, i) => (
               <li key={item.href} className="flex shrink-0 items-center">
                 {i > 0 && (
-                  <span aria-hidden="true" className={`mr-3 h-4 w-px lg:mr-4 ${divider}`} />
+                  <span aria-hidden="true" className={`mr-2 h-4 w-px lg:mr-3 ${divider}`} />
                 )}
                 <a
                   href={item.href}
-                  className={`whitespace-nowrap text-[13px] font-medium uppercase tracking-[0.18em] transition-colors ${linkColor}`}
+                  className={`whitespace-nowrap text-[11px] font-medium uppercase tracking-widest transition-colors xl:text-[12px] 2xl:text-[13px] ${linkColor}`}
                 >
                   {item.label}
                 </a>
@@ -54,7 +55,7 @@ export default function Masthead() {
           </ul>
         </nav>
 
-        <div className={`hidden shrink-0 items-center lg:flex ${scrolled ? "" : "pointer-events-none invisible"}`}>
+        <div className={`hidden shrink-0 items-center 2xl:flex ${scrolled ? "" : "pointer-events-none invisible"}`}>
           <a href="#kontak" className="btn-gold btn-gold-sm rounded-[2px]">
             Konsultasi Sekarang
           </a>

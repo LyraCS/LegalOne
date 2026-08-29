@@ -25,7 +25,7 @@ export default function Why() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
           <SectionHeading
-            num="05"
+            num="07"
             label="KENAPA LEGALONE"
             title="Alasan Memilih LegalOne untuk Usaha Anda."
           />
