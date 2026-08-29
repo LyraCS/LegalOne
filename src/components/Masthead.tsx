@@ -13,10 +13,14 @@ export default function Masthead() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const hero = document.getElementById("top");
+    if (!hero) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setScrolled(!entry.isIntersecting),
+      { rootMargin: "-64px 0px 0px 0px" },
+    );
+    observer.observe(hero);
+    return () => observer.disconnect();
   }, []);
 
   const linkColor = scrolled ? "text-ink hover:text-accent" : "text-paper hover:text-accent";
@@ -24,9 +28,9 @@ export default function Masthead() {
   const barBg = scrolled ? "border-ink/10 bg-paper/90 backdrop-blur" : "border-transparent bg-transparent";
 
   return (
-    <header className={`sticky top-0 z-40 border-b transition-colors duration-300 ${barBg}`}>
+    <header className={`fixed top-0 z-40 w-full border-b transition-colors duration-300 ${barBg}`}>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-10">
-        <a href="#top" className="flex shrink-0 items-center gap-2">
+        <a href="#top" className={`flex shrink-0 items-center gap-2 ${scrolled ? "" : "pointer-events-none invisible"}`}>
           <figure className="m-0 flex shrink-0 items-center">
             <img
               src="/icon-scale.png"
@@ -34,12 +38,12 @@ export default function Masthead() {
               className="h-9 w-auto"
             />
           </figure>
-          <span className={`font-cinzel text-xl font-black tracking-[0.08em] transition-colors ${scrolled ? "text-ink" : "text-paper"}`}>
+          <span className="font-cinzel text-xl font-black tracking-[0.08em] text-ink transition-colors">
             LEGAL<span className="text-accent">ONE</span>
           </span>
         </a>
 
-        <nav className="hidden min-w-0 items-center lg:flex" aria-label="Navigasi utama">
+        <nav className={`hidden min-w-0 items-center lg:flex ${scrolled ? "" : "pointer-events-none invisible"}`} aria-label="Navigasi utama">
           <ul className="flex min-w-0 items-center gap-4 lg:gap-6">
             {NAV.map((item, i) => (
               <li key={item.href} className="flex shrink-0 items-center">
@@ -57,7 +61,7 @@ export default function Masthead() {
           </ul>
         </nav>
 
-        <div className="hidden shrink-0 items-center lg:flex">
+        <div className={`hidden shrink-0 items-center lg:flex ${scrolled ? "" : "pointer-events-none invisible"}`}>
           <a href="#kontak" className="btn-gold btn-gold-sm rounded-[2px]">
             Konsultasi Sekarang
           </a>

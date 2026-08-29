@@ -66,7 +66,7 @@ export default function Logo({
       </svg>
       {variant === "full" && (
         <span className="ml-2.5 font-display font-black tracking-tight">
-          LEGALONE
+          LEGAL<span className="text-accent">ONE</span>
         </span>
       )}
     </span>

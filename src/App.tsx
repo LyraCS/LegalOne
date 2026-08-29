@@ -1,5 +1,6 @@
 import Masthead from "./components/Masthead";
 import Hero from "./components/Hero";
+import IntroStats from "./components/IntroStats";
 import About from "./components/About";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
@@ -16,6 +17,7 @@ export default function LegalOnePage() {
       <Masthead />
       <main>
         <Hero />
+        <IntroStats />
         <About />
         <Services />
         <Pricing />

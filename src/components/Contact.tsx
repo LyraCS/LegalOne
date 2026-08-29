@@ -3,7 +3,7 @@ import type { FormEvent } from "react";
 const CONTACTS = [
   { label: "ALAMAT", value: "Ruko 92 Avenix BSD CITY, Jl. Raya Cisauk No.7 Blk F, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345", href: "https://maps.app.goo.gl/SY7Wru4GsMBGYX8x6" },
   { label: "WHATSAPP", value: "+62 813-1841-5169", href: "https://wa.me/6281318415169" },
-  { label: "EMAIL", value: "halo@legalone.co.id", href: "mailto:halo@legalone.co.id" },
+  { label: "EMAIL", value: "cs@legalind.co.id", href: "mailto:cs@legalind.co.id" },
 ];
 
 function Field({

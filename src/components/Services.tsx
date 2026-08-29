@@ -41,20 +41,20 @@ export default function Services() {
           <li key={s.name}>
             <a
               href="#paket"
-              className="group flex h-full flex-col border border-ink/25 rounded-[2px] bg-paper p-7 transition-colors hover:border-accent"
+              className="group flex h-full flex-col border border-ink/25 rounded-[2px] bg-paper p-7 transition-colors hover:border-accent hover:bg-primary-dark"
             >
               <span className="w-10 shrink-0 font-display text-sm text-accent">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-6 font-display text-2xl font-semibold leading-tight text-ink transition-colors group-hover:text-accent">
+              <h3 className="mt-6 font-display text-2xl font-semibold leading-tight text-ink transition-colors group-hover:text-paper">
                 {s.name}
               </h3>
               {/* TODO: replace with real content */}
-              <p className="mt-3 text-[15px] leading-relaxed text-muted">{s.desc}</p>
-              <ul className="mt-6 space-y-2 border-t border-ink/15 pt-5">
+              <p className="mt-3 text-[15px] leading-relaxed text-muted group-hover:text-paper/75">{s.desc}</p>
+              <ul className="mt-6 space-y-2 border-t border-ink/15 pt-5 group-hover:border-paper/15">
                 {s.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-[14px] leading-snug text-ink/75">
-                    <span aria-hidden="true" className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border border-ink/30 text-[10px] text-accent">
+                  <li key={item} className="flex items-start gap-2.5 text-[14px] leading-snug text-ink/75 group-hover:text-paper/75">
+                    <span aria-hidden="true" className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border border-ink/30 text-[10px] text-accent group-hover:border-paper/30">
                       ✓
                     </span>
                     {item}
