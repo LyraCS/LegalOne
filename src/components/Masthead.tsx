@@ -31,15 +31,8 @@ export default function Masthead() {
     <header className={`fixed top-0 z-40 w-full border-b transition-colors duration-300 ${barBg}`}>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-10">
         <a href="#top" className={`flex shrink-0 items-center gap-2 ${scrolled ? "" : "pointer-events-none invisible"}`}>
-          <figure className="m-0 flex shrink-0 items-center">
-            <img
-              src="/icon-scale.png"
-              alt=""
-              className="h-9 w-auto"
-            />
-          </figure>
           <span className="font-cinzel text-xl font-black tracking-[0.08em] text-ink transition-colors">
-            LEGAL<span className="text-accent">ONE</span>
+            LEGAL<span className="text-accent">ONE</span><span>.ID</span>
           </span>
         </a>
 
