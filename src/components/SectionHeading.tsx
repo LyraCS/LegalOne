@@ -12,7 +12,7 @@ export default function SectionHeading({
   return (
     <div className="border-t border-ink/15 pt-6">
       <p className="kicker">
-        <span className="text-accent">{num}</span>, {label}
+        <span className="text-accent">{num}</span> · {label}
       </p>
       <h2 className="mt-5 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl">
         {title}

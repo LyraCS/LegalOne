@@ -3,15 +3,15 @@ import SectionHeading from "./SectionHeading";
 const POINTS = [
   {
     lead: "Proses cepat dalam hari kerja",
-    desc: "Dokumen disiapkan tim kami · Anda tidak perlu mengurusnya sendiri atau bertanya-tanya kemana harus mulai.",
+    desc: "Dokumen disiapkan tim kami, Anda tidak perlu mengurusnya sendiri atau bertanya-tanya kemana harus mulai.",
   },
   {
     lead: "Harga final, tanpa biaya tersembunyi",
-    desc: "Semua biaya disepakati di awal · apa yang Anda lihat adalah apa yang Anda bayar.",
+    desc: "Semua biaya disepakati di awal, apa yang Anda lihat adalah apa yang Anda bayar.",
   },
   {
     lead: "Satu paket lengkap",
-    desc: "Dokumen, rekening giro, logo, hingga perpajakan · tidak terpotong jadi layanan terpisah.",
+    desc: "Dokumen, rekening giro, logo, hingga perpajakan, tidak terpotong jadi layanan terpisah.",
   },
   {
     lead: "Konsultasi awal gratis",
