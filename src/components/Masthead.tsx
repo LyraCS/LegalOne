@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NAV = [
   { label: "Tentang", href: "#tentang" },
@@ -10,9 +10,21 @@ const NAV = [
 
 export default function Masthead() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const linkColor = scrolled ? "text-ink hover:text-accent" : "text-paper hover:text-accent";
+  const divider = scrolled ? "bg-ink/20" : "bg-paper/40";
+  const barBg = scrolled ? "border-ink/10 bg-paper/90 backdrop-blur" : "border-transparent bg-transparent";
 
   return (
-    <header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/90 backdrop-blur">
+    <header className={`sticky top-0 z-40 border-b transition-colors duration-300 ${barBg}`}>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-10">
         <a href="#top" className="flex shrink-0 items-center gap-2">
           <figure className="m-0 flex shrink-0 items-center">
@@ -22,8 +34,8 @@ export default function Masthead() {
               className="h-9 w-auto"
             />
           </figure>
-          <span className="font-display text-xl font-black tracking-tight text-ink">
-            LEGALONE
+          <span className={`font-cinzel text-xl font-black tracking-[0.08em] transition-colors ${scrolled ? "text-ink" : "text-paper"}`}>
+            LEGAL<span className="text-accent">ONE</span>
           </span>
         </a>
 
@@ -32,11 +44,11 @@ export default function Masthead() {
             {NAV.map((item, i) => (
               <li key={item.href} className="flex shrink-0 items-center">
                 {i > 0 && (
-                  <span aria-hidden="true" className="mr-3 h-4 w-px bg-ink/20 lg:mr-4" />
+                  <span aria-hidden="true" className={`mr-3 h-4 w-px lg:mr-4 ${divider}`} />
                 )}
                 <a
                   href={item.href}
-                  className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:text-accent"
+                  className={`whitespace-nowrap text-[13px] font-medium uppercase tracking-[0.18em] transition-colors ${linkColor}`}
                 >
                   {item.label}
                 </a>
@@ -57,7 +69,7 @@ export default function Masthead() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Tutup menu" : "Buka menu"}
-          className="flex h-10 w-10 items-center justify-center text-ink lg:hidden"
+          className={`flex h-10 w-10 items-center justify-center transition-colors lg:hidden ${scrolled ? "text-ink" : "text-paper"}`}
         >
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5">
             {open ? (
