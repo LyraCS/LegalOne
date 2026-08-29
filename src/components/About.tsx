@@ -13,12 +13,6 @@ export default function About() {
       <div className="grid grid-cols-1 gap-14 md:grid-cols-12">
         <div className="md:col-span-7">
           <SectionHeading num="01" label="TENTANG KAMI" title="Mitra Legalitas & Jasa Hukum Terpercaya." />
-          <p className="mt-10 text-xl leading-[1.6] text-ink/85 md:text-2xl">
-            LegalOne merupakan perusahaan yang menyediakan Jasa Layanan Pengurusan Legalitas,
-            Jasa Layanan Notaris/PPAT, dan Jasa Layanan Hukum yang terpercaya, tercepat, dan
-            terlengkap. LegalOne berkomitmen membantu pelaku Usaha Mikro dan Kecil (UMK) untuk
-            naik kelas dan membantu mengembangkan usaha Non-UMK.
-          </p>
 
           <h3 className="kicker mt-14">MENGENAL LEBIH DEKAT LEGALONE</h3>
           <p className="mt-4 text-[16px] leading-[1.7] text-ink/80">

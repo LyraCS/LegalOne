@@ -36,9 +36,9 @@ export default function Perizinan() {
       <div className="mt-12 grid grid-cols-1 gap-x-20 lg:grid-cols-2">
         {ITEMS.map((item) => (
           <div key={item.name} className="flex flex-col border-b border-ink/10 py-5">
-            <div className="flex items-baseline justify-between gap-4">
+            <div className="flex flex-col gap-y-2">
               <h3 className="font-display text-xl font-semibold text-ink">{item.name}</h3>
-              <span className="shrink-0 font-semibold text-accent">{item.price}</span>
+              <span className="font-display font-semibold text-accent">{item.price}</span>
             </div>
             <p className="mt-2 text-[15px] leading-relaxed text-muted">{item.desc}</p>
           </div>

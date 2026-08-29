@@ -55,12 +55,6 @@ export default function Masthead() {
           </ul>
         </nav>
 
-        <div className={`hidden shrink-0 items-center 2xl:flex ${scrolled ? "" : "pointer-events-none invisible"}`}>
-          <a href="#kontak" className="btn-gold btn-gold-sm rounded-[2px]">
-            Konsultasi Sekarang
-          </a>
-        </div>
-
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}

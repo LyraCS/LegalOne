@@ -211,14 +211,14 @@ function EntityCard({ e, open, onToggle }: { e: Entity; open: boolean; onToggle:
         type="button"
         onClick={onToggle}
         aria-expanded={open}
-        className="flex w-full items-center justify-between gap-4 p-6 text-left"
+        className="group flex w-full items-center justify-between gap-3 px-5 py-3.5 text-left transition-colors hover:bg-primary-dark sm:gap-4 sm:px-6 sm:py-4 md:p-6"
       >
         <span className="min-w-0">
-          <span className="block font-display text-xl font-semibold text-ink md:text-2xl">{e.name}</span>
-          <span className="mt-1 block text-[14px] text-muted">{e.tagline}</span>
+          <span className="block font-display text-lg font-semibold text-ink transition-colors group-hover:text-paper md:text-2xl">{e.name}</span>
+          <span className="mt-1 hidden text-[14px] text-muted transition-colors group-hover:text-paper/70 sm:block">{e.tagline}</span>
         </span>
-        <span className="flex shrink-0 items-center gap-4">
-          <span className="font-display text-lg font-semibold text-accent md:text-xl">{e.price}</span>
+        <span className="flex shrink-0 items-center gap-3 sm:gap-4">
+          <span className="font-display text-base font-semibold text-accent transition-colors group-hover:text-paper md:text-xl">{e.price}</span>
           <span aria-hidden="true" className={`text-accent transition-transform ${open ? "rotate-45" : ""}`}>+</span>
         </span>
       </button>
@@ -280,7 +280,7 @@ export default function Pendirian() {
               setFilter(f.key);
               setOpen(null);
             }}
-            className={`border px-5 py-2.5 text-[14px] font-semibold transition-colors rounded-[2px] ${
+            className={`font-display border px-5 py-2.5 text-[14px] font-semibold transition-colors rounded-[2px] ${
               filter === f.key
                 ? "border-ink bg-ink text-paper"
                 : "border-ink/25 text-ink hover:border-accent"
@@ -306,7 +306,7 @@ export default function Pendirian() {
               className="flex items-baseline justify-between border-b border-ink/10 py-3 text-[15px]"
             >
               <span className="text-ink/80">{a.name}</span>
-              <span className="font-medium text-ink">{a.price}</span>
+              <span className="font-display font-medium text-ink">{a.price}</span>
             </div>
           ))}
         </div>

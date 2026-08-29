@@ -8,7 +8,7 @@ const VALUES = [
 
 const STATS = [
   { value: 500, suffix: "+", label: "Usaha Didirikan" },
-  { value: 2024, suffix: "", label: "Sejak Beroperasi" },
+  { value: 2024, suffix: "", label: "Tahun Beroperasi" },
   { value: 100, suffix: "%", label: "Proses Online" },
   { value: 34, suffix: "", label: "Provinsi Terjangkau" },
 ];
@@ -41,7 +41,7 @@ function CountUp({ value }: { value: number }) {
     return () => obs.disconnect();
   }, [value]);
 
-  return <span ref={ref}>{display.toLocaleString("id-ID")}</span>;
+  return <span ref={ref}>{display}</span>;
 }
 
 export default function IntroStats() {
@@ -57,7 +57,7 @@ export default function IntroStats() {
           </h2>
           <p className="mt-8 max-w-2xl text-lg leading-[1.6] text-paper/75">
             Kami memberikan panduan yang jelas, andal, dan mudah dipahami sepanjang proses
-            legalisasi usaha Anda di Indonesia — bukan sekadar pengolah dokumen.
+            legalisasi usaha Anda di Indonesia, bukan sekadar pengolah dokumen.
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-6 border-t border-paper/15 pt-8 sm:grid-cols-3">
