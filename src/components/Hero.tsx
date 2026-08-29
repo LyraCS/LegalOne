@@ -16,7 +16,7 @@ export default function Hero() {
           </p>
           <h1 className="mt-7 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-ink md:text-7xl">
             Usaha Anda, <span className="italic">Legal</span>
-            <span className="mt-1 block h-[3px] w-full max-w-[min(14ch,80%)] bg-accent" aria-hidden="true" />
+            <span className="mt-2 block h-[6px] w-full max-w-[min(14ch,80%)] bg-accent" aria-hidden="true" />
             Sejak Halaman Pertama.
           </h1>
           {/* TODO: replace with real content */}

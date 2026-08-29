@@ -168,7 +168,7 @@ export default function Pricing() {
             }`}
           >
             {tier.featured && (
-              <span className="absolute right-0 top-0 bg-accent px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-primary-dark">
+              <span className="absolute right-0 top-0 bg-accent px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-paper">
                 Paling Banyak Dipilih
               </span>
             )}

@@ -1,4 +1,4 @@
-const GOLD = "#C9A227";
+const ACCENT = "#E30613"
 
 type LogoProps = {
   className?: string;
@@ -11,7 +11,7 @@ export default function Logo({
   tone = "dark",
   variant = "full",
 }: LogoProps) {
-  const ink = tone === "dark" ? "#0F1B3C" : "#FBFAF7";
+  const ink = tone === "dark" ? "#111111" : "#FFFFFF";
 
   return (
     <span className={`inline-flex items-center ${className}`}>
@@ -21,7 +21,7 @@ export default function Logo({
         role="img"
         aria-label="LegalOne"
       >
-        <rect x="56" y="3" width="8" height="7" fill={GOLD} />
+        <rect x="56" y="3" width="8" height="7" fill={ACCENT} />
         <rect x="25" y="8" width="70" height="4" fill={ink} />
         <rect x="57" y="12" width="6" height="52" fill={ink} />
         <rect x="44" y="64" width="32" height="5" fill={ink} />
