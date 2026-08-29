@@ -25,9 +25,14 @@ export default function Hero() {
             langkah legalitas usaha Anda menjadi satu alur yang jelas, tanpa istilah
             yang membingungkan.
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-6">
-            <a href="#kontak" className="btn-gold rounded-[2px]">
-              Mulai Konsultasi Gratis
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+            <a
+              href="https://wa.me/6281318415169"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold rounded-[2px]"
+            >
+              Konsultasi via WhatsApp
             </a>
             <a href="#paket" className="cta-link text-base">
               Lihat Paket →
@@ -37,6 +42,21 @@ export default function Hero() {
             PT Perorangan · PT · CV · Yayasan · Merek Usaha
           </p>
         </div>
+      </div>
+
+      {/* TODO: replace with real stats */}
+      <div className="mt-16 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-ink/15 pt-10 md:grid-cols-4">
+        {[
+          { value: "1.000+", label: "Klien Terbantu" },
+          { value: "2018", label: "Sejak Beroperasi" },
+          { value: "100%", label: "Proses Daring & Transparan" },
+          { value: "34", label: "Provinsi Terjangkau" },
+        ].map((s) => (
+          <div key={s.label}>
+            <p className="font-display text-4xl font-semibold text-ink md:text-5xl">{s.value}</p>
+            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">{s.label}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
