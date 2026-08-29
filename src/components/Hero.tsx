@@ -2,6 +2,14 @@ export default function Hero() {
   return (
     <section id="top" className="mx-auto max-w-6xl scroll-mt-20 px-6 pb-20 pt-14 md:px-10 md:pb-28 md:pt-20">
       <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-12 md:gap-10">
+        <div className="md:col-span-5">
+          <img
+            src="/icon-scale.png"
+            alt="LegalOne"
+            className="w-full"
+          />
+        </div>
+
         <div className="md:col-span-7">
           <p className="kicker">
             <span className="text-accent">EDISI</span> 2026 · PANDUAN MENDIRIKAN USAHA ANDA
@@ -28,14 +36,6 @@ export default function Hero() {
           <p className="mt-10 border-t border-ink/15 pt-6 text-[12px] font-medium uppercase tracking-[0.18em] text-muted">
             PT Perorangan · PT · CV · Yayasan · Merek Usaha
           </p>
-        </div>
-
-        <div className="md:col-span-5 md:mt-24">
-          <img
-            src="/icon-scale.png"
-            alt="LegalOne"
-            className="w-full"
-          />
         </div>
       </div>
     </section>

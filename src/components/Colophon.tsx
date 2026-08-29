@@ -55,7 +55,7 @@ export default function Colophon() {
             </ul>
           </nav>
 
-          <div className="flex gap-5 md:col-start-3 md:justify-end">
+          <div className="flex justify-center gap-5 md:col-start-3 md:justify-end">
             {SOCIALS.map((s) => (
               <a
                 key={s.label}
