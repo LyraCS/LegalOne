@@ -2,20 +2,20 @@ import SectionHeading from "./SectionHeading";
 
 const POINTS = [
   {
-    lead: "Usaha yang telah berhasil didirikan",
-    desc: "Diukur sebagai kepercayaan, bukan sekadar angka · setiap akta adalah awal dari sesuatu yang nyata.",
+    lead: "Proses cepat dalam hari kerja",
+    desc: "Dokumen disiapkan tim kami · Anda tidak perlu mengurusnya sendiri atau bertanya-tanya kemana harus mulai.",
   },
   {
-    lead: "Proses dalam hitungan hari kerja",
-    desc: "Alur yang terstandar dan komunikasi yang jelas, tanpa drama yang tidak perlu.",
+    lead: "Harga final, tanpa biaya tersembunyi",
+    desc: "Semua biaya disepakati di awal · apa yang Anda lihat adalah apa yang Anda bayar.",
   },
   {
-    lead: "Satu paket, semua kebutuhan",
-    desc: "Dokumen, rekening, logo, hingga perpajakan · tidak terpotong-potong jadi layanan terpisah.",
+    lead: "Satu paket lengkap",
+    desc: "Dokumen, rekening giro, logo, hingga perpajakan · tidak terpotong jadi layanan terpisah.",
   },
   {
-    lead: "Konsultasi awal tanpa biaya",
-    desc: "Tanyakan apa pun sebelum memutuskan. Bertanya itu gratis.",
+    lead: "Konsultasi awal gratis",
+    desc: "Tanyakan apa pun sebelum memutuskan. Diskusi pertama tidak dipungut biaya.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Why() {
           <SectionHeading
             num="05"
             label="KENAPA LEGALONE"
-            title="Dipercaya karena Jelaskan, Bukan karena Berteriak."
+            title="Alasan Memilih LegalOne untuk Usaha Anda."
           />
         </div>
         <div className="md:col-span-7">

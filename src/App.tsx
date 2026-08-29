@@ -6,7 +6,6 @@ import Pricing from "./components/Pricing";
 import Process from "./components/Process";
 import PullQuote from "./components/PullQuote";
 import Why from "./components/Why";
-import Team from "./components/Team";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Colophon from "./components/Colophon";
@@ -23,7 +22,6 @@ export default function LegalOnePage() {
         <Process />
         <PullQuote />
         <Why />
-        <Team />
         <FAQ />
         <Contact />
       </main>

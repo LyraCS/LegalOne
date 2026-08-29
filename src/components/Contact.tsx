@@ -54,14 +54,14 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-16 md:grid-cols-12">
           <div className="flex flex-col md:col-span-6">
             <p className="kicker text-paper/50">
-              <span className="text-accent">PENUTUP</span> · PERCAKAPAN DIMULAI
+              <span className="text-accent">HUBUNGI</span> · KONSULTASI GRATIS
             </p>
             <h2 className="mt-5 font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
-              Mulai Babak Legal Usaha Anda.
+              Siap Melegalkan Usaha Anda?
             </h2>
             <p className="mt-7 max-w-md text-[15px] leading-relaxed text-paper/70">
-              Ceritakan kebutuhan Anda · tim kami akan membantu memilih bentuk badan usaha
-              dan paket yang paling sesuai.
+              Konsultasi pertama gratis. Ceritakan kebutuhan Anda, dan tim kami akan
+              membantu memilih bentuk badan usaha serta paket yang paling sesuai.
             </p>
 
             <dl className="mt-12 border-t border-paper/15">

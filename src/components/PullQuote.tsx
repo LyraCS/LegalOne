@@ -13,10 +13,12 @@ export default function PullQuote() {
         </span>
         {/* TODO: replace with real content */}
         <blockquote className="mx-auto mt-2 max-w-3xl font-display text-3xl font-medium italic leading-[1.25] tracking-tight text-ink md:text-5xl">
-          Legalitas bukan garis akhir sebelum usaha dimulai · itu fondasi yang membuatnya
-          bisa bertahan.
+          Satu paket, satu proses, satu tim yang mengurus semuanya. Usaha Anda legal dan
+          siap jalan.
         </blockquote>
-        <p className="kicker mt-8">· TIM LEGALONE</p>
+        <a href="#kontak" className="btn-gold mt-10 inline-block rounded-[2px]">
+          Mulai Konsultasi Gratis
+        </a>
       </div>
     </section>
   );

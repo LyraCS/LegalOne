@@ -31,7 +31,11 @@ const SERVICES = [
 export default function Services() {
   return (
     <section id="layanan" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-16 md:px-10 md:py-24">
-      <SectionHeading num="02" label="LAYANAN" title="Lima Bentuk Legalitas, Satu Alur yang Jelas." />
+      <SectionHeading num="02" label="LAYANAN" title="Bentuk Usaha & Izin yang Kami Urus." />
+      <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-ink/70">
+        Pilih bentuk badan usaha yang paling sesuai · kami urus seluruh dokumennya sampai
+        usaha resmi berdiri.
+      </p>
       <ol className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((s, i) => (
           <li key={s.name}>

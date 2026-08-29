@@ -129,9 +129,9 @@ export default function Pricing() {
       <SectionHeading num="03" label="PANDUAN PAKET" title="Tiga Cara Memulai, dari yang Paling Ringkas." />
 
       {/* TODO: replace with real content */}
-      <p className="mt-8 max-w-2xl text-[17px] leading-relaxed text-ink/75">
-        Setiap usaha punya titik mulai yang berbeda. Berikut tiga cara kami membantu Anda
-        memulai · dari yang paling ringkas, hingga yang paling lengkap.
+      <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-ink/70">
+        Semua paket sudah termasuk dokumen legalitas, rekening giro perusahaan, dan logo
+        premium. Pilih sesuai skala usaha Anda · harga final, tanpa biaya tersembunyi.
       </p>
 
       <div className="mt-12" role="tablist" aria-label="Pilih jenis badan usaha">

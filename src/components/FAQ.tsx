@@ -30,7 +30,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-16 md:px-10 md:py-24">
-      <SectionHeading num="07" label="TANYA JAWAB" title="Pertanyaan yang Paling Sering Dibaca." />
+      <SectionHeading num="06" label="TANYA JAWAB" title="Pertanyaan yang Paling Sering Diajukan." />
       <dl className="mt-14 border border-ink/25 rounded-[2px]">
         {FAQS.map((f, i) => {
           const open = openIndex === i;
