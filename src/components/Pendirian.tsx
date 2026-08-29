@@ -280,7 +280,7 @@ export default function Pendirian() {
               setFilter(f.key);
               setOpen(null);
             }}
-            className={`font-display border px-5 py-2.5 text-[14px] font-semibold transition-colors rounded-[2px] ${
+            className={`border px-5 py-2.5 text-[14px] font-semibold transition-colors rounded-[2px] ${
               filter === f.key
                 ? "border-ink bg-ink text-paper"
                 : "border-ink/25 text-ink hover:border-accent"
